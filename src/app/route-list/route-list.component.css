@@ -1,0 +1,20 @@
+.route-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 0.5rem;
+}
+
+.route-table th {
+    text-align: left;
+    font-weight: 600;
+    padding-bottom: 0.25rem;
+}
+
+.route-table td {
+    padding: 0.25rem 0;
+    vertical-align: top;
+}
+
+.route-sep {
+    border-color: var(--muted);
+}

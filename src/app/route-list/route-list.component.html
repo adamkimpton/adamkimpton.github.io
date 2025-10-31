@@ -1,0 +1,15 @@
+<ng-container *ngIf="routes">
+  <ng-container *ngFor="let route of routes; let rIndex = index">
+    <div class="route-sep" *ngIf="rIndex &gt; 0"><hr></div>
+    <table class="route-table">
+      <tr>
+        <th>Duration</th>
+        <th>Destination</th>
+      </tr>
+      <tr *ngFor="let detail of route">
+        <td align="center">{{ detail.emoji }}<br>{{ detail.duration }}</td>
+        <td>{{ detail.title }}<br>{{ detail.description }}<br>{{ detail.address }}</td>
+      </tr>
+    </table>
+  </ng-container>
+</ng-container>

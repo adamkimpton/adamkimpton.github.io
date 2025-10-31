@@ -1,0 +1,51 @@
+## Node / JavaScript
+node_modules/
+
+## Build output
+dist/
+out-tsc/
+build/
+.angular/
+
+## Compiled source
+*.js
+*.js.map
+*.d.ts
+
+## System files
+.DS_Store
+Thumbs.db
+
+## Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+## Environment files
+.env
+.env.*
+
+## IDEs / Editors
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+## Mac / Linux
+Icon?
+.Trash-*
+
+## Misc
+.sass-cache/
+coverage/
+.nyc_output/
+
+## Local Angular configuration
+local.env.ts
+
+## Lockfiles (if you want to use a specific package manager, keep its lockfile and ignore others)
+# Keep package-lock.json if you rely on npm lockfile
+pnpm-lock.yaml
+

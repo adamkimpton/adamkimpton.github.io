@@ -1,0 +1,7 @@
+.content {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.7)), url('https://images.pexels.com/photos/2187605/pexels-photo-2187605.jpeg?cs=srgb&dl=pexels-evgeny-tchebotarev-1058775-2187605.jpg&fm=jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

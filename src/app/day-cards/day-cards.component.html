@@ -1,0 +1,22 @@
+<div class="cards" #list>
+    <article *ngFor="let d of days(); let i = index" class="card" [class.active]="i===selected()">
+        <header>
+            <h2>{{ d.title }}</h2>
+            <div class="time">{{ d.date }}</div>
+        </header>
+        <div class="subtitle">{{ d.subtitle }}</div>
+        <div *ngIf="d.travel" class="travel">
+            <h3>Travel</h3>
+            <strong>Cost:</strong> {{ d.travel?.cost }}
+            <br>
+            <strong>Duration:</strong> {{ d.travel?.duration }}
+            <route-list [routes]="d.travel?.routes"></route-list>
+        </div>
+        <div *ngIf="d.activities" class="activities">
+            <h3>Activities</h3>
+            <ul>
+                <li *ngFor="let activity of d.activities">{{ activity.name }} <span *ngIf="activity.duration"> - {{ activity.duration }}</span><span *ngIf="activity.cost"> - {{ activity.cost }}</span></li>
+            </ul>
+        </div>
+    </article>
+</div>

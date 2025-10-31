@@ -1,0 +1,60 @@
+.page-header {
+    top: 0;
+    position: sticky;
+    display: flex;
+    align-items: center;
+    padding: 0.6rem 1rem;
+    backdrop-filter: blur(10px);
+    background: var(--bg);
+    height: var(--header-height);
+}
+
+.page-header h1 {
+    margin: 0;
+    font-size: 1.5rem;
+    font-weight: 700;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    font-family: "Lexend Zetta", sans-serif;
+}
+
+.page-header h2 {
+    margin: 0;
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex: 1;
+    font-family: "Lexend", sans-serif;
+    color: var(--muted);
+}
+
+.title-block {
+    height: 100%;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-header button {
+    background: transparent;
+    border: none;
+    color: var(--text);
+    font-size: 1.4rem;
+    width: 40px;
+    height: 40px;
+    border-radius: 8px
+}
+
+.page-header .prev {
+    text-align: left
+}
+
+.page-header .next {
+    text-align: right
+}
