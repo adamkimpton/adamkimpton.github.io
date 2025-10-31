@@ -1,0 +1,1 @@
+:root{--bg: #1d1e1f;--glass: #000000aa;--fg: #37393b88;--card: rgba(255, 255, 255, .02);--text: #e8eef2;--muted: #cccfd1;--header-height: 80px}html{height:calc(100vh - var(--header-height));margin:0;font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Helvetica Neue,Arial;background:var(--bg);color:var(--text)}body{margin:0}
