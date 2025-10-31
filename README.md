@@ -4,6 +4,7 @@
 - Cost: ~JP¥1500 (Suica)
 - Duration: ~1h30m
 ### Schedule
+
 | Duration | Destination |
 | :-: | :- |
 | 🚶<br><i>1-2 mins</i> | <b>Narita Airport Terminal 1 Station</b><br>Walk 75m to Terminal 1 Station |
@@ -19,6 +20,7 @@
 - Cost: ~JP¥1900 (JP¥950 each way, Suica)
 - Duration: ~2h45m (1h20m each way)
 ### Schedule
+
 | Duration | Destination |
 | :-: | :- |
 | 🚶<br><i>5 mins</i> | <b>Shin-Ōkubo Station</b><br>Walk 350m to Shin-Ōkubo Station Platform 2 |
@@ -68,6 +70,7 @@ The facility is located near Kyoto Higashi Interchange.
 Please be sure to let us know if you are coming by car.
 ```
 ### Schedule
+
 | Duration | Destination |
 | :-: | :- |
 | 🚶<br><i>5 mins</i> | <b>Shin-Ōkubo Station</b> (Platform 2)<br>Walk 350m to Shin-Ōkubo Station Platform 2 |
@@ -86,6 +89,7 @@ Please be sure to let us know if you are coming by car.
 - Cost: ~JP¥960 (Suica)
 - Duration: ~1h5m
 ### Schedule
+
 | Duration | Destination |
 | :-: | :- |
 | 🚶<br><i>6 mins</i> | <b>Yamashina Station</b><br>Walk 400m to Yamashina Station |
@@ -103,6 +107,7 @@ Please be sure to let us know if you are coming by car.
 - Duration: ~4h35m (~2h15m each way)
 - Need to be careful about times, certain trains will not be available at certain times, meaning we might be forced to walk a significant distance (1.3km if we go Tennōji route, but Tennōji to Teradachō isn't open after hours).
 ### Schedule
+
 | Duration | Destination |
 | :-: | :- |
 | 🚶<br><i>5 mins</i> | <b>Teradachō Station</b> (Platform 2)<br>Walk 300m to Teradachō Station Platform 2 |
@@ -126,6 +131,7 @@ Please be sure to let us know if you are coming by car.
 - Cost: ~JP¥1320 (JP¥660 each way, Suica)
 - Duration: ~1h30m
 ### Schedule
+
 | Duration | Destination |
 | :-: | :- |
 | 🚶<br><i>5 mins</i> | <b>Teradachō Station</b> (Platform 2)<br>Walk 300m to Teradachō Station Platform 2 |
@@ -145,6 +151,7 @@ Please be sure to let us know if you are coming by car.
 - Cost: ~JP¥480 (JP¥240 each way, Suica)
 - Duration: ~1h20m (40 mins each way)
 ### Schedule
+
 | Duration | Destination |
 | :-: | :- |
 | 🚶<br><i>5 mins</i> | <b>Teradachō Station</b> (Platform 1)<br>Walk 300m to Teradachō Station Platform 1 |
@@ -161,6 +168,7 @@ Please be sure to let us know if you are coming by car.
 - Cost: ~JP¥15,580 (Suica)
 - Duration: ~3h50m
 ### Schedule
+
 | Duration | Destination |
 | :-: | :- |
 | 🚶<br><i>5 mins</i> | <b>Teradachō Station</b> (Platform 2)<br>Walk 300m to Teradachō Station Platform 2 |
@@ -181,6 +189,7 @@ Please be sure to let us know if you are coming by car.
 - Cost: ~JP¥1480 (Suica)
 - Duration: ~1h40m
 ### Schedule
+
 | Duration | Destination |
 | :-: | :- |
 | 🚶<br><i>6 mins</i> | <b>Shinjuku-sanchome Station</b> (Platform 2)<br>Walk 350m to Shinjuku-sanchome Station Platform 2 |
