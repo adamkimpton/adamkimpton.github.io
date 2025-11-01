@@ -61,9 +61,5 @@ For more information on using the Angular CLI, including detailed command refere
 ## TODO:
 - Fix header not updating when scrolling
 - Add styling for travel tables
-- Fix layout for day panel
-- Add current day calendar indicator
-- Dim other day panels
-- Integrate transit API
-- Look into changing travel table format? - Depends on API
+- Add link for accommodation after last train station
 - E2E testing
