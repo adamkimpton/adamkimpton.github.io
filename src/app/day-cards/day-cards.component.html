@@ -5,13 +5,7 @@
             <div class="time">{{ d.date }}</div>
         </header>
         <div class="subtitle">{{ d.subtitle }}</div>
-        <div *ngIf="d.travel" class="travel">
-            <h3>Travel</h3>
-            <strong>Cost:</strong> {{ d.travel?.cost }}
-            <br>
-            <strong>Duration:</strong> {{ d.travel?.duration }}
-            <route-list [routes]="d.travel?.routes"></route-list>
-        </div>
+        <route-list [routes]="d.travel?.routes"></route-list>
         <div *ngIf="d.activities" class="activities">
             <h3>Activities</h3>
             <ul>
