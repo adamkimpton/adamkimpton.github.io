@@ -7,3 +7,14 @@
     font-size: 1em;
     color: var(--muted);
 }
+
+a.button-link {
+    padding: 2px 6px;
+    border: 1px outset buttonborder;
+    border-radius: 5px;
+    color: var(--bg);
+    background-color: var(--muted);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.875em;
+}

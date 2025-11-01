@@ -11,7 +11,7 @@
             </tr>
             <tr *ngFor="let step of route.steps">
                 <td align="center">{{ step.emoji }}<br>{{ step.duration }}</td>
-                <td>{{ step.title }}<br>{{ step.description }}<br>{{ step.address }}</td>
+                <td><span>{{ step.title }}</span><br><span>{{ step.description }}</span><br><a *ngIf="step.placeID" class="button-link" href="https://maps.app.goo.gl/{{ step.placeID }}" target="_blank" rel="noopener noreferrer">Open address</a></td>
             </tr>
         </table>
     </div>

@@ -6,7 +6,7 @@ export interface RouteStep {
   duration: string;
   title: string;
   description: string;
-  address?: string;
+  placeID?: string;
 }
 
 export interface Route {
@@ -30,17 +30,7 @@ export interface Day {
   subtitle?: string;
   date: string;
   travel?: {
-    routes: {
-      steps: {
-        emoji: string;
-        duration: string;
-        title: string;
-        description: string;
-        address?: string;
-      }[];
-      cost: string;
-      duration: string;
-    }[];
+    routes: Route[];
   };
   activities?: {
     name: string;
@@ -68,7 +58,7 @@ export class ItineraryService {
               { emoji: '🚆', duration: '20 mins', title: 'Nippori Station', description: 'Keisei Line Rapid-Limited Express towards Keisei-Ueno' },
               { emoji: '🚶', duration: '3-4 mins', title: 'Nippori Station (Platform 11)', description: 'Walk 85m to Platform 11' },
               { emoji: '🚆', duration: '20 mins', title: 'Shin-Ōkubo Station', description: 'Yamanote Line Local towards For Ikebukuro / Shinjuku' },
-              { emoji: '🚶', duration: '4 mins', title: 'Tokyo accommodation', description: "Walk 300m to 'Home in Shinjuku City, Hosted by Naomi' (Airbnb)", address: "1-chōme-16-16 Ōkubo, Shinjuku City, Tokyo 169-0072" }
+              { emoji: '🚶', duration: '4 mins', title: 'Tokyo accommodation', description: "Walk 300m to 'Home in Shinjuku City, Hosted by Naomi' (Airbnb)", placeID: "rBeD8FiwaKPkkYzk8" }
             ],
             cost: '¥1500',
             duration: '1h30m'
@@ -102,7 +92,7 @@ export class ItineraryService {
               { emoji: '🚆', duration: '48 mins', title: 'Return to Shinagawa', description: 'Yokosuka Line Local back towards Shinagawa' },
               { emoji: '🚶', duration: '2 mins', title: 'Shinagawa Station (Platform 3)', description: 'Walk 120m to Platform 3' },
               { emoji: '🚆', duration: '5 mins', title: 'Shin-Ōkubo Station', description: 'Yamanote Line Local towards For Shibuya / Shinjuku' },
-              { emoji: '🚶', duration: '4 mins', title: 'Tokyo accommodation', description: "Walk 300m to 'Home in Shinjuku City, Hosted by Naomi' (Airbnb)" }
+              { emoji: '🚶', duration: '4 mins', title: 'Tokyo accommodation', description: "Walk 300m to 'Home in Shinjuku City, Hosted by Naomi' (Airbnb)", placeID: "rBeD8FiwaKPkkYzk8" }
             ],
             cost: '¥950',
             duration: '1h25m'
@@ -125,7 +115,7 @@ export class ItineraryService {
               { emoji: '🚅', duration: '~2h5m', title: 'Kyoto Station', description: 'Tokaido Shinkansen Nozomi to Kyoto (approx. 2h5m)' },
               { emoji: '🚶', duration: '3 mins', title: 'Kyoto Station (Platform 2)', description: 'Walk 130m to platform for local to Yamashina' },
               { emoji: '🚆', duration: '5 mins', title: 'Yamashina', description: 'Tokaido-Sanyo Line local to Yamashina' },
-              { emoji: '🚶', duration: '5 mins', title: 'Kyoto accommodation', description: "Walk 400m to 'House in Kyoto, Hosted by Sao'" }
+              { emoji: '🚶', duration: '5 mins', title: 'Kyoto accommodation', description: "Walk 400m to 'House in Kyoto, Hosted by Sao'", placeID: "yerBXuF3NBLNQmMT9" }
             ],
             cost: '¥14,170',
             duration: '3h'
@@ -145,14 +135,14 @@ export class ItineraryService {
       travel: {
         routes: [
           {
-            cost: '¥1500',
-            duration: '1h30m',
+            cost: '¥960',
+            duration: '1h05m',
             steps: [
               { emoji: '🚶', duration: '6 mins', title: 'Yamashina Station', description: 'Walk 400m to Yamashina Station' },
               { emoji: '🚆', duration: '34 mins', title: 'Osaka Station', description: 'Tokaido-Sanyo Line Special Rapid towards Osaka' },
               { emoji: '🚶', duration: '1 min', title: 'Osaka Station (Platform 2)', description: 'Walk 50m to platform' },
               { emoji: '🚆', duration: '20 mins', title: 'Teradachō Station', description: 'Osaka Loop / local towards Tennoji / Teradachō' },
-              { emoji: '🚶', duration: '4 mins', title: 'Osaka accommodation', description: "Walk 300m to 'Home in Ikuno Ward, Osaka, Hosted by Takeshi'" }
+              { emoji: '🚶', duration: '4 mins', title: 'Osaka accommodation', description: "Walk 300m to 'Home in Ikuno Ward, Osaka, Hosted by Takeshi'", placeID: "6ZXPtSJzAJwBzEe4A" }
             ]
           }
         ]
@@ -166,8 +156,8 @@ export class ItineraryService {
       travel: {
         routes: [
           {
-            cost: '¥1500',
-            duration: '1h30m',
+            cost: '¥17000',
+            duration: '2h15m',
             steps: [
               { emoji: '🚶', duration: '5 mins', title: 'Teradachō Station', description: 'Walk 300m to Teradachō Station Platform 2' },
               { emoji: '🚆', duration: '2 mins', title: 'Tennōji Station', description: 'Osaka Loop Line Kanku-Rapid towards Tennoji' },
@@ -177,14 +167,14 @@ export class ItineraryService {
             ]
           },
           {
-            cost: '¥1500',
-            duration: '1h30m',
+            cost: '¥17000',
+            duration: '2h15m',
             steps: [
               { emoji: '🚶', duration: '-', title: 'Hiroshima Station (Platform 14)', description: 'Begin and change platforms' },
               { emoji: '🚅', duration: '1h25m', title: 'Return to Shin-Osaka', description: 'Sanyo Shinkansen Mizuho back to Shin-Osaka' },
               { emoji: '🚶', duration: '5 mins', title: 'Shin-Osaka Station (Platform 1)', description: 'Walk 150m to platform' },
               { emoji: '🚆', duration: '6 mins', title: 'Umeda Station', description: 'Midosuji Line local towards Nakamozu' },
-              { emoji: '🚶', duration: '4 mins', title: 'Teradachō / Osaka return', description: 'Walk back to accommodation area' }
+              { emoji: '🚶', duration: '4 mins', title: 'Teradachō / Osaka return', description: 'Walk back to accommodation area', placeID: "6ZXPtSJzAJwBzEe4A" }
             ]
           }
         ]
@@ -198,7 +188,7 @@ export class ItineraryService {
       travel: {
         routes: [
           {
-            cost: '¥1500',
+            cost: '¥660',
             duration: '1h30m',
             steps: [
               { emoji: '🚶', duration: '5 mins', title: 'Teradachō Station', description: 'Walk 300m to Teradachō Station Platform 2' },
@@ -208,14 +198,14 @@ export class ItineraryService {
             ]
           },
           {
-            cost: '¥1500',
+            cost: '¥660',
             duration: '1h30m',
             steps: [
               { emoji: '🚶', duration: '-', title: 'Nara Station arrival', description: 'Begin at Nara Station' },
               { emoji: '🚆', duration: '34 mins', title: 'Return to Tennōji', description: 'Yamatoji Line Rapid back to Tennōji' },
               { emoji: '🚶', duration: '1 min', title: 'Tennōji Station (Platform 11)', description: 'Walk 70m to platform' },
               { emoji: '🚆', duration: '2 mins', title: 'Teradachō Station', description: 'Osaka Loop Line Local towards Sakurajima' },
-              { emoji: '🚶', duration: '4 mins', title: 'Osaka accommodation', description: "Walk 300m to 'Home in Ikuno Ward, Osaka, Hosted by Takeshi'" }
+              { emoji: '🚶', duration: '4 mins', title: 'Osaka accommodation', description: "Walk 300m to 'Home in Ikuno Ward, Osaka, Hosted by Takeshi'", placeID: "6ZXPtSJzAJwBzEe4A" }
             ]
           }
         ]
@@ -228,13 +218,19 @@ export class ItineraryService {
       date: 'Nov 27',
       travel: {
         routes: [{
-          cost: '¥1500',
-          duration: '1h30m',
+          cost: '¥480',
+          duration: '40 mins',
           steps: [
             { emoji: '🚶', duration: '5 mins', title: 'Teradachō Station', description: 'Walk 300m to Teradachō Station Platform 1' },
-            { emoji: '🚆', duration: '40 mins', title: 'Universal-City Station', description: 'Osaka Loop Line Local towards Sakurajima (to Universal-City)' },
+            { emoji: '🚆', duration: '40 mins', title: 'Universal-City Station', description: 'Osaka Loop Line Local towards Sakurajima (to Universal-City)' }
+          ]
+        }, {
+          cost: '¥480',
+          duration: '40 mins',
+          steps: [
+            { emoji: '🚶', duration: '-', title: 'Universal-City Station departure', description: 'Begin at Universal-City Station' },
             { emoji: '🚆', duration: '5 mins', title: 'Nishikujō Station', description: 'JR Yumesaki Line Local towards Nishi-Kujo' },
-            { emoji: '🚶', duration: '4 mins', title: 'Return to Osaka accommodation', description: "Walk / taxi to 'Home in Ikuno Ward, Osaka, Hosted by Takeshi'" }
+            { emoji: '🚶', duration: '4 mins', title: 'Return to Osaka accommodation', description: "Walk / taxi to 'Home in Ikuno Ward, Osaka, Hosted by Takeshi'", placeID: "6ZXPtSJzAJwBzEe4A" }
           ]
         }]
       }
@@ -246,8 +242,8 @@ export class ItineraryService {
       date: 'Nov 28',
       travel: {
         routes: [{
-          cost: '¥1500',
-          duration: '1h30m',
+          cost: '¥15580',
+          duration: '3h50m',
           steps: [
             { emoji: '🚶', duration: '5 mins', title: 'Teradachō Station', description: 'Walk 300m to Teradachō Station Platform 2' },
             { emoji: '🚆', duration: '1 min', title: 'Tennōji Station', description: 'Osaka Loop Line towards Tennoji' },
@@ -257,7 +253,7 @@ export class ItineraryService {
             { emoji: '🚅', duration: '2h25m', title: 'Shinagawa Station', description: 'Tokaido Shinkansen Nozomi to Shinagawa/Tokyo (approx. 2h25m)' },
             { emoji: '🚶', duration: '4 mins', title: 'Shinagawa Station (Platform 13)', description: 'Walk to connecting platform' },
             { emoji: '🚆', duration: '11 mins', title: 'Bakurochō / Shinjuku-sanchome', description: 'Local connections towards Shinjuku-sanchome' },
-            { emoji: '🚶', duration: '5 mins', title: 'Tokyo accommodation #2', description: "Walk 350m to 'Via Inn Shinjuku' (Hotel)" }
+            { emoji: '🚶', duration: '5 mins', title: 'Tokyo accommodation #2', description: "Walk 350m to 'Via Inn Shinjuku' (Hotel)", placeID: "r2THhErvQrzhiEWCA" }
           ]
         }]
       }
@@ -269,8 +265,8 @@ export class ItineraryService {
       date: 'Dec 1',
       travel: {
         routes: [{
-          cost: '¥1500',
-          duration: '1h30m',
+          cost: '¥1480',
+          duration: '1h40m',
           steps: [
             { emoji: '🚶', duration: '6 mins', title: 'Shinjuku-sanchome Station', description: 'Walk 350m to Shinjuku-sanchome Station Platform 2' },
             { emoji: '🚆', duration: '15 mins', title: 'Bakuroyokoyama Station', description: 'Shinjuku Line Local towards Motoyawata' },
