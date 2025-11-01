@@ -1,0 +1,18 @@
+<ng-container>
+    <div class="route-steps">
+        <div class="route-steps-title">
+            <span *ngIf="startStation">{{ startStation.displayName.text }}</span> → <span *ngIf="endStation">{{
+                endStation.displayName.text }}</span>
+        </div>
+        <table class="route-table">
+            <tr>
+                <th>Duration</th>
+                <th>Destination</th>
+            </tr>
+            <tr *ngFor="let step of route.steps">
+                <td align="center">{{ step.emoji }}<br>{{ step.duration }}</td>
+                <td>{{ step.title }}<br>{{ step.description }}<br>{{ step.address }}</td>
+            </tr>
+        </table>
+    </div>
+</ng-container>

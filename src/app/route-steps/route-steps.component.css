@@ -1,0 +1,9 @@
+.route-steps {
+    margin: 1em 0;
+}
+
+.route-steps-title span {
+    font-family: "Lexend", sans-serif;
+    font-size: 1em;
+    color: var(--muted);
+}

@@ -1,15 +1,15 @@
 <ng-container *ngIf="routes">
   <ng-container *ngFor="let route of routes; let rIndex = index">
-    <div class="route-sep" *ngIf="rIndex &gt; 0"><hr></div>
-    <table class="route-table">
-      <tr>
-        <th>Duration</th>
-        <th>Destination</th>
-      </tr>
-      <tr *ngFor="let detail of route">
-        <td align="center">{{ detail.emoji }}<br>{{ detail.duration }}</td>
-        <td>{{ detail.title }}<br>{{ detail.description }}<br>{{ detail.address }}</td>
-      </tr>
-    </table>
+    <div class="route-sep" *ngIf="rIndex &gt; 0">
+      <hr>
+    </div>
+    <div *ngIf="route" class="travel">
+      <h3>Travel</h3>
+      <strong>Cost:</strong> {{ route.cost }}
+      <br>
+      <strong>Duration:</strong> {{ route.duration }}
+    </div>
+    <route-steps [route]="route"></route-steps>
+    <route-map [start]="getStartStation(route.steps)" [end]="getEndStation(route.steps)"></route-map>
   </ng-container>
 </ng-container>
